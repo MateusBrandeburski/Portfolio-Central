@@ -8,7 +8,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Portfólio Mateus Brandeburski</title>
     <style>
-        .area-1, .area-2, .area-3 {
+        .area-1, .area-2, .area-3, .area-4, .area-5 {
             visibility: hidden;
         }
     </style>
@@ -45,7 +45,7 @@
     <!-- FIM APRESENTACAO -->
 
     <div class="min-h-screen bg-gray-100 flex items-center justify-center">
-        <div class="container mx-auto py-12 md:py-24">
+        <div class="container mx-auto py-12 md:py-24 area-4">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Coluna do Vídeo -->
                 <div class="flex items-center justify-center">
@@ -67,7 +67,7 @@
     
 
     <!-- INÍCIO PROJETOS PESSOAIS -->
-    <div class="container mx-auto py-12 md:py-24">
+    <div class="container mx-auto py-12 md:py-24 area-5">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <!-- Descrição do vídeo -->
             <div class="p-4">
@@ -155,6 +155,7 @@
           </div>
         </div>
       </section>
+
       <script>
         ScrollReveal().reveal('.headline');
         window.sr = ScrollReveal({ reset: true});
@@ -162,6 +163,8 @@
         sr.reveal('.area-1', { duration:1000})
         sr.reveal('.area-2')
         sr.reveal('.area-3')
+        sr.reveal('.area-4', { duration:1500})
+        sr.reveal('.area-5', { duration:1500})
       </script>
 
 </body>
