@@ -11,6 +11,13 @@
         .area-1, .area-2, .area-3, .area-4, .area-5 {
             visibility: hidden;
         }
+
+        .connector {
+            width: 100px;
+            height: 3px;
+            background-color: #4299E1;
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body>
@@ -21,7 +28,7 @@
     </header>
     
     <!-- INÍCIO APRESENTAÇÃO -->
-    <div class="container mx-auto py-12 md:py-24">
+    <div class="container mx-auto py-12 md:py-24 headline ">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="flex items-center justify-center">
                 <div class="avatar">
@@ -31,7 +38,7 @@
                 </div>
             </div>
     
-            <div class="headline flex flex-col justify-center">
+            <div class="flex flex-col justify-center">
                 <div class="text-center md:text-left">
                     <h1 class="font-bold text-4xl md:text-5xl lg:text-6xl">Mateus Brandeburski</h1>
                 </div>
@@ -85,6 +92,123 @@
         </div>
     </div>
 
+
+    <!-- ----------------------- -->
+<!-- INÍCIO HABILIDADES DE DEVOPS -->
+<div class="container mx-auto py-12 md:py-24 area-5">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start rolagem1">
+        <!-- Habilidade de Automação -->
+        <div class="flex-grow bg-white p-4 h-full">
+            <h1 class="text-2xl font-bold">Habilidades de DevOps</h1>
+            <hr class="my-4">
+
+            <div class="mb-4">
+                <div class="flex items-center mb-2">
+                    <div class="rounded-full bg-green-500 h-6 w-6 flex items-center justify-center mr-2">
+                        <span class="text-white">1</span>
+                    </div>
+                    <h2 class="text-lg font-semibold">Automação</h2>
+                </div>
+                <p class="text-gray-600">Automatização de tarefas de desenvolvimento, teste e implantação usando ferramentas como Ansible e Jenkins.</p>
+            </div>
+            <div class="connector"></div>
+            <div class="mb-4">
+                <div class="flex items-center mb-2">
+                    <div class="rounded-full bg-green-500 h-6 w-6 flex items-center justify-center mr-2">
+                        <span class="text-white">2</span>
+                    </div>
+                    <h2 class="text-lg font-semibold">Contêineres</h2>
+                </div>
+                <p class="text-gray-600">Gerenciamento de contêineres com Docker e orquestração usando Kubernetes.</p>
+            </div>
+            <div class="connector"></div>
+            <div class="mb-4">
+                <div class="flex items-center mb-2">
+                    <div class="rounded-full bg-green-500 h-6 w-6 flex items-center justify-center mr-2">
+                        <span class="text-white">3</span>
+                    </div>
+                    <h2 class="text-lg font-semibold">Integração Contínua</h2>
+                </div>
+                <p class="text-gray-600">Configuração de pipelines de CI/CD com GitLab CI, Travis CI, etc.</p>
+            </div>
+        </div>
+
+        <!-- Habilidade de Redes/Infra/Cloud -->
+        <div class="flex-grow bg-white p-4 h-full">
+            <h1 class="text-2xl font-bold">Habilidades de Redes/Infra/Cloud</h1>
+            <hr class="my-4">
+        
+            <div class="mb-4">
+                <div class="flex items-center mb-2">
+                    <div class="rounded-full bg-green-500 h-6 w-6 flex items-center justify-center mr-2">
+                        <span class="text-white">1</span>
+                    </div>
+                    <h2 class="text-lg font-semibold">Proxy</h2>
+                </div>
+                <p class="text-gray-600">Configuração e implementação de servidores proxy para roteamento de tráfego e segurança.</p>
+            </div>
+            <div class="connector"></div>
+            <div class="mb-4">
+                <div class="flex items-center mb-2">
+                    <div class="rounded-full bg-green-500 h-6 w-6 flex items-center justify-center mr-2">
+                        <span class="text-white">2</span>
+                    </div>
+                    <h2 class="text-lg font-semibold">Nuvem (Cloud)</h2>
+                </div>
+                <p class="text-gray-600">Utilização de serviços em nuvem (cloud computing) como AWS, Azure ou Google Cloud para implantação e escalabilidade de aplicativos.</p>
+            </div>
+            <div class="connector"></div>
+            <div class="mb-4">
+                <div class="flex items-center mb-2">
+                    <div class="rounded-full bg-green-500 h-6 w-6 flex items-center justify-center mr-2">
+                        <span class="text-white">3</span>
+                    </div>
+                    <h2 class="text-lg font-semibold">Servidores WEB</h2>
+                </div>
+                <p class="text-gray-600">Configurar aplicações para rodar em ambiente de produção (Apache, Nginx), configurar chave SSL, proxy, DNS e subdomínios.</p>
+            </div>
+        </div>
+
+        <!-- Habilidade de Backend -->
+        <div class="flex-grow bg-white p-4 h-full ">
+            <h1 class="text-2xl font-bold">Habilidades de Backend</h1>
+            <hr class="my-4">
+        
+            <div class="mb-4">
+                <div class="flex items-center mb-2">
+                    <div class="rounded-full bg-green-500 h-6 w-6 flex items-center justify-center mr-2">
+                        <span class="text-white">1</span>
+                    </div>
+                    <h2 class="text-lg font-semibold">Desenvolvimento de APIs</h2>
+                </div>
+                <p class="text-gray-600">Criação e manutenção de APIs usando frameworks como Express.js, Django, ou Ruby on Rails.</p>
+            </div>
+            <div class="connector"></div>
+            <div class="mb-4">
+                <div class="flex items-center mb-2">
+                    <div class="rounded-full bg-green-500 h-6 w-6 flex items-center justify-center mr-2">
+                        <span class="text-white">2</span>
+                    </div>
+                    <h2 class="text-lg font-semibold">Bancos de Dados</h2>
+                </div>
+                <p class="text-gray-600">Gerenciamento de bancos de dados relacionais e não-relacionais, como MySQL, PostgreSQL, MongoDB e MariaDB.</p>
+            </div>
+            <div class="connector"></div>
+            <div class="mb-4">
+                <div class="flex items-center mb-2">
+                    <div class="rounded-full bg-green-500 h-6 w-6 flex items-center justify-center mr-2">
+                        <span class="text-white">3</span>
+                    </div>
+                    <h2 class="text-lg font-semibold">Segurança</h2>
+                </div>
+                <p class="text-gray-600">Implementação de medidas de segurança e proteção de dados em aplicativos e serviços backend.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FIM HABILIDADES DE DEVOPS -->
+
     <!-- <div class="px-6 pt-14"> -->
         <div class="max-w-2xl py-20 md:container md:mx-auto area-1">
             <div class="">
@@ -92,7 +216,7 @@
             </div>
         </div>
     <!-- </div> -->
-    <div class="headline flex justify-center items-center">
+    <div class="flex justify-center items-center rolagem1">
         <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 area-2">
             <div class="card w-full sm:w-96 bg-base-100 shadow-xl">
                 <div class="card-body">
@@ -158,16 +282,34 @@
         </div>
       </section>
 
-      <script>
-        ScrollReveal().reveal('.headline');
-        window.sr = ScrollReveal({ reset: true});
+<!-- Inclua o arquivo ScrollReveal.js -->
+<script src="https://unpkg.com/scrollreveal@4/dist/scrollreveal.min.js"></script>
 
-        sr.reveal('.area-1', { duration:1000})
-        sr.reveal('.area-2')
-        sr.reveal('.area-3')
-        sr.reveal('.area-4', { duration:1500})
-        sr.reveal('.area-5', { duration:1500})
-      </script>
+<script>
+    // Configure o ScrollReveal para elementos com a classe 'headline'
+    ScrollReveal().reveal('.headline');
+
+        // Outros elementos com animações
+    ScrollReveal().reveal('.area-1', { duration: 1500 });
+    ScrollReveal().reveal('.area-2', { duration: 1500 });
+    ScrollReveal().reveal('.area-3', { duration: 1500 });
+    ScrollReveal().reveal('.area-4', { duration: 1500 });
+    ScrollReveal().reveal('.area-5', { duration: 1500 });
+
+    ScrollReveal({
+        reset: true, // Redefinir as animações em cada rolagem
+        duration: 1000, // Duração da animação (em milissegundos)
+        distance: '50px', // Distância do deslocamento
+        origin: 'right', // Origem da animação (à direita)
+    });
+
+    // Adicione a classe 'rolagem1' aos elementos que deseja animar
+    ScrollReveal().reveal('.rolagem1');
+
+
+
+</script>
+
 
 </body>
 </html>
