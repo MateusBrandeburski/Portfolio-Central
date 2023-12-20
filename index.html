@@ -18,16 +18,34 @@
             background-color: #4299E1;
             margin: 0 auto;
         }
+        .underline-custom {
+            position: relative;
+            text-decoration: none;
+            color: #333; /* Cor do texto */
+        }
+
+        .underline-custom::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -3px; /* Ajuste a altura do sublinhado conforme necessário */
+            width: 100%;
+            height: 3px; /* Espessura do sublinhado */
+            background-color: #333; /* Cor do sublinhado */
+        }
     </style>
 </head>
 <body>
+
+<!--  HEADER -->
     <header class="bg-gray-800 text-white py-12 md:py-24 text-center">
         <div class="container mx-auto">
-            <h1 class="text-4xl md:text-6xl font-bold">Seu Título</h1>
+            <h1 class="text-4xl md:text-6xl font-bold">Currículo Online</h1>
         </div>
     </header>
-    
-    <!-- INÍCIO APRESENTAÇÃO -->
+<!--  FIm HEADER --> 
+
+<!-- INÍCIO APRESENTAÇÃO -->
     <div class="container mx-auto py-12 md:py-24 headline ">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="flex items-center justify-center">
@@ -48,8 +66,42 @@
             </div>
         </div>
     </div>
-    
-    <!-- FIM APRESENTACAO -->
+<!-- FIM APRESENTACAO -->
+
+<!-- Título dos Desafios Superados -->
+    <div class="bg-gray-200 text-white py-4 rolagem1">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold">Desafios Superados ao Longo da Carreira</h1>
+        </div>
+    </div>
+<!-- fim Título dos Desafios Superados -->
+
+<!-- Desafios e Projeto -->
+
+    <!-- INÍCIO PROJETOS PESSOAIS -->
+    <div class="container mx-auto py-12 md:py-24 area-5">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <!-- Descrição do projeto -->
+            <div class="p-4">
+                <h1 class="text-4xl font-bold mb-4">Fiz manutenção e implementei novas funcionalidades em um aplicativo legado em produção [PHP Runner]</h1>
+                <p class="text-gray-600">A Harpia Tech tem um projeto Web em produção que é o mantenedor da empresa. Devido a um acidente, o código do projeto foi perdido
+                    sobrando apenas o build em produção do código. Com uma licitação em andamento que previa novas funcionalidades, eu fui "voluntário" para aplicar essa manutenção e implementar novas funcionalidades. 
+                </p>
+            </div>
+            
+            <!-- Carrossel de imagens -->
+            <div class="relative rounded-lg overflow-hidden shadow-md">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <img src="photo1.png" alt="Imagem 1">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------- -->
+
 
     <div class="min-h-screen bg-gray-100 flex items-center justify-center">
         <div class="container mx-auto py-12 md:py-24 area-4">
@@ -71,29 +123,12 @@
             </div>
         </div>
     </div>
-    
-
-    <!-- INÍCIO PROJETOS PESSOAIS -->
-    <div class="container mx-auto py-12 md:py-24 area-5">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <!-- Descrição do vídeo -->
-            <div class="p-4">
-                <h1 class="text-4xl font-bold mb-4">Fiz manutenção e implementei novas funcionanidades em um aplicativo legado.</h1>
-                <p class="text-gray-600">A Harpia Tech tem um projeto Web em produção que é o mantenedor da empresa. Devido a um acidente, o código do projeto foi perdido
-                    sobrando apenas o build em pordução do código. Com uma licitação em andamento que previa novas funcionalidades, eu fui "voluntário" para aplicar essa manutenção e implementar novas funcionalidades. 
-                </p>
-            </div>
-            
-            <!-- Vídeo do YouTube Shorts incorporado à direita -->
-            <div class="relative h-96 rounded-lg overflow-hidden shadow-md">
-                <!-- Substitua 'yuubkcgc0QQ' pelo código do vídeo do YouTube Shorts desejado -->
-                <iframe width="100%" height="100%" src="https://www.youtube.com/shorts/yuubkcgc0QQ?autoplay=1" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
-    </div>
 
 
-    <!-- ----------------------- -->
+
+<!-- ----------------------- -->
+
+
 <!-- INÍCIO HABILIDADES DE DEVOPS -->
 <div class="container mx-auto py-12 md:py-24 area-5">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start rolagem1">
@@ -181,7 +216,7 @@
                     </div>
                     <h2 class="text-lg font-semibold">Desenvolvimento de APIs</h2>
                 </div>
-                <p class="text-gray-600">Criação e manutenção de APIs usando frameworks como Express.js, Django, ou Ruby on Rails.</p>
+                <p class="text-gray-600">Criação e manutenção de APIs usando frameworks como Express.js, Django, Flask, FastAPI, SpringBot, Laravel e outros.</p>
             </div>
             <div class="connector"></div>
             <div class="mb-4">
@@ -206,17 +241,42 @@
         </div>
     </div>
 </div>
-
 <!-- FIM HABILIDADES DE DEVOPS -->
 
+<!-- Experiência de Mercado #1 -->
+<div class="min-h-screen bg-blue-200 flex items-center justify-center">
+    <div class="bg-white p-8 w-96 shadow-lg rounded-lg text-center">
+        <img src="logo_empresa_1.png" alt="Logo da Empresa 1" class="mx-auto mb-4" width="100">
+        <h1 class="text-2xl font-bold mb-2 text-gray-900">Experiência #1</h1>
+        <p class="text-gray-700">
+            Descreva aqui a sua primeira experiência de mercado de forma detalhada e envolvente.
+        </p>
+    </div>
+</div>
+
+<!-- Experiência de Mercado #2 -->
+<div class="min-h-screen bg-green-200 flex items-center justify-center">
+    <div class="bg-white p-8 w-96 shadow-lg rounded-lg text-center">
+        <img src="logo_empresa_2.png" alt="Logo da Empresa 2" class="mx-auto mb-4" width="100">
+        <h1 class="text-2xl font-bold mb-2 text-gray-900">Experiência #2</h1>
+        <p class="text-gray-700">
+            Descreva aqui a sua segunda experiência de mercado de forma detalhada e envolvente.
+        </p>
+    </div>
+</div>
+<!-- Fim Experiência de Mercado -->
+
+
+
+
     <!-- <div class="px-6 pt-14"> -->
-        <div class="max-w-2xl py-20 md:container md:mx-auto area-1">
+        <!-- <div class="max-w-2xl py-20 md:container md:mx-auto area-1">
             <div class="">
                 <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Projetos:</h1>
             </div>
-        </div>
+        </div> -->
     <!-- </div> -->
-    <div class="flex justify-center items-center rolagem1">
+    <!-- <div class="flex justify-center items-center rolagem1">
         <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 area-2">
             <div class="card w-full sm:w-96 bg-base-100 shadow-xl">
                 <div class="card-body">
@@ -258,7 +318,7 @@
             </div>
             
         </div>
-    </div>
+    </div> -->
     <!-- FIM PROJETOS PESSOAIS -->
     <!-- <section class="bg-gray-100 p-8 area-3 ">
         <div class="max-w-3xl mx-auto">
