@@ -47,7 +47,9 @@
 <div id="scroll-progress"></div>
 <div style="height: 2000px;"> 
     <!-- INÍCIO APRESENTAÇÃO -->
-    <div class="min-h-screen flex bg-blue-200 items-center justify-center">
+    <!-- min-h-screen -->
+    
+    <div class=" flex bg-blue-200 items-center justify-center">
         <div class="container mx-auto py-12 md:py-24 headline">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="flex items-center justify-center">
@@ -62,112 +64,23 @@
                         <h1 class="font-bold text-4xl md:text-5xl lg:text-6xl">Mateus Brandeburski</h1>
                     </div>
                     <div class="text-center md:text-left">
-                        <p class="text-gray-600">Desenvolvedor Backend e DevOps</p>
+                        <p class="text-gray-600">Desenvolvedor Backend</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="flex items-center justify-center absolute top-100 bottom-0 left-0 right-0">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-4 animate-bounce animate-pulse text-primary-500 my-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg id="seta" xmlns="http://www.w3.org/2000/svg" class="h-9 w-4 animate-bounce animate-pulse text-primary-500 my-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
             </svg>
         </div>
     </div>
 <!-- FIM APRESENTACAO -->
 
-<!-- Título dos Desafios Superados -->
-<div class="min-h-screen flex items-center justify-center bg-base-200">
-    <div class="py-4 headline">
-        <div class="container mx-auto text-center">
-            <p class="text-lg md:text-xl">Seguindo a ideia de perfil realizador...</p>
-            <h1 class="text-4xl font-bold">Veja alguns dos desafios que enfrentei durante minha carreira e que tive de superar.</h1>
-        </div>
-    </div>
-    </div>
-    <!-- fim Título dos Desafios Superados -->
-    
-    
-    <!-- INÍCIO Desafios Superados -->
-            <div class="bg-gradient-to-r from-blue-200 to-blue-500 min-h-screen flex items-center justify-center">
-                <div class="container mx-auto py-12 md:py-24 headline">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                        <!-- Descrição do projeto -->
-                        <div class="p-4">
-                            <h1 class="text-4xl font-bold mb-4">Fiz manutenção e implementei novas funcionalidades em um aplicativo legado em produção [PHP Runner]</h1>
-                            <p class="text-gray-600">A Harpia Tech tem um projeto Web em produção que é o mantenedor da empresa. Devido a um acidente com um dos sócios, o código do projeto foi perdido
-                                sobrando apenas o build em produção do código. Com uma licitação em andamento que previa novas funcionalidades, eu fui "voluntário" para aplicar essa manutenção e implementar novas funcionalidades. Devido ao risco, ninguém queria fazer. Porém, olhei para o problema, entendi a arquitetura, fiz um espoço e apliquei a implementação. 
-                            </p>
-                        </div>
-                        
-                        <!-- Carrossel de imagens -->
-                        <div class="relative rounded-lg overflow-hidden shadow-md">
-                            <div class="mockup-code">
-                                <pre><code>PHP Runner https://xlinesoft.com/blog/2018/11/06/customizing-project-logo/</code></pre>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-        <!-- desafios superados  2 -->
-        <div class="min-h-screen bg-gray-100 flex items-center justify-center">
-            <div class="container mx-auto py-12 md:py-24 headline">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <!-- Coluna do Vídeo -->
-                    <div class="mockup-phone relative border-black">
-                        <div class="display flex items-center justify-center">
-                        <div class="artboard artboard-demo phone-1">
-                            <iframe
-                            class="artboard-demo phone-1 absolute inset-0 w-full h-full"
-                            src="https://www.youtube.com/embed/zNMpV6UGtVQ?controls=0"
-                            title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen>
-                            </iframe>
-                        </div>
-                        </div>
-                    </div>
-                    
-    
-                    <!-- Coluna da Descrição -->
-                    <div class="flex flex-col justify-center">
-                        <h1 class="font-bold text-4xl md:text-5xl lg:text-6xl mb-4">Criei e configurei um servidor em casa.</h1>
-                        <p class="text-gray-600 text-lg mb-8">Para configurar um servidor em casa com uma internet residencial é preciso solidos conhecimentos de infraestrurada de redes. Configrar firewall, encaminhamento de portas, certificados SSL, containers, servidores web como Apache e Nginx. Para assim preparar aplicações para rodarem em ambientes de produção.</p>
-                        <a href="https://www.linkedin.com/posts/mateus-brandeburski-001ba7202_devops-backend-developer-activity-7142514148243935233-me8U?utm_source=share&utm_medium=member_desktop" class="text-blue-500 hover:underline" target="_blank">Assistir o vídeo completo.</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <!-- desafios superados 3 -->
-    
-        <div class="min-h-screen flex  bg-blue-200  items-center justify-center">
-            <div class="container mx-auto py-12 md:py-24 headline">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <!-- Carrossel de imagens -->
-                    <div class="mockup-browser border bg-base-300">
-                        <div class="mockup-browser-toolbar">
-                        <div class="input">https://github.com/telekom-security/tpotce</div>
-                        </div>
-                        <img src="images/tpotsocial.png" alt="Imagem do navegador" />
-                    </div>
-                    <!-- Descrição do projeto -->
-                    <div class="p-4">
-                        <h1 class="text-4xl font-bold mb-4">Tive de desenvolver conceitos Avançados em Cyber Segurança e Honeypots</h1>
-                        <p class="text-gray-600">Parte do meu trabalho foi configurar os servidores desatualizados (PHP, Apache, Python). Além disso, configurar chaves SSL, Honeypots internos e externos para segurança dos servidores e clientes. Como minha experiência anterior tinha sido como desenvolvedor apenas, tive de estudar e aprender todos esses novos conceitos.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- FIM desafios superados -->
-    
-
 <!-- Quem sabe fazer mostra que sabe! -->
 <div class="py-6 my-4 headline">
     <div class="container my-4 mx-auto text-center">
-        <h1 class="text-4xl  my-4 font-bold p-8">Melhor do que falar dos frameworks que eu uso, é provar.</h1>   
+        <h1 class="text-4xl  my-4 font-bold p-8">Melhor do que falar dos frameworks que eu uso, é provar mostrando alguns projetos.</h1>   
     </div>
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 mb-8 headline">
@@ -182,7 +95,7 @@
         <img src="images/angular-svgrepo-com.svg" alt="Logo da Empresa 1" class="mx-auto mb-4" width="100">
         <h1 class="text-2xl font-bold mb-2 text-gray-900">Angular</h1>
         <p class="text-gray-700">
-        <a href="https://odin-srv-project.com" target="_blank" class="btn btn-active bg-black text-white">Healthy Developer</a>
+        <a href="https://healthy-developer.odin-srv-project.com/" target="_blank" class="btn btn-active bg-black text-white">Healthy Developer</a>
         </p> 
     </div>
     <div class="card w-96 bg-base-100 bg-white p-8 shadow-lg rounded-lg mx-auto text-center"> 
@@ -200,29 +113,35 @@
         <img src="images/php01-svgrepo-com.svg" alt="Logo da Empresa 1" class="mx-auto mb-4" width="100">
         <h1 class="text-2xl font-bold mb-2 text-gray-900">PHP</h1>
         <p class="text-gray-700">
-            <a href="" class="btn btn-active bg-black text-white" disabled>Cyber Security - Vazamentos de Dados</a>
+            <a href="" class="btn btn-active bg-black text-white" target="_blank" disabled>Cyber Security - Vazamentos de Dados</a>
+            <a href="https://lumen-api.odin-srv-project.com" class="mt-2 btn btn-active bg-black text-white" target="_blank">API/WeebHooks - Lumen</a>
         </p> 
     </div>
     <div class="card w-96 bg-base-100 bg-white p-8 shadow-lg rounded-lg mx-auto text-center"> 
         <img src="images/golang-svgrepo-com (1).svg" alt="Logo da Empresa 1" class="mx-auto mb-4" width="100">
         <h1 class="text-2xl font-bold mb-2 text-gray-900">Go</h1>
         <p class="text-gray-700">
-            <a href="" class="btn btn-active bg-black text-white" disabled>Bots de Scraping</a>
-          
+            <a href="" class="btn btn-active bg-black text-white" target="_blank" disabled>Bots de Scraping</a>
         </p>
     </div>
     <div class="card w-96 bg-base-100 bg-white p-8 shadow-lg rounded-lg mx-auto text-center">
         <img src="images/python-127-svgrepo-com.svg" alt="Logo da Empresa 1" class="mx-auto mb-4" width="100">
         <h1 class="text-2xl font-bold mb-2 text-gray-900 text-center">Python</h1>
         <p class="text-gray-700">
-            <a href="" class="btn btn-active bg-black text-white" disabled>WebService Flask</a>
-            <a href="" class="btn btn-active bg-black text-white" disabled>WeebHooks</a>
-            <a href="https://odin-srv-project.com:7000/docs" target="_blank" class="mt-2 btn btn-active bg-black text-white">FastAPI do Projeto Healthy Developer</a>
+            <a href="https://web-service-flask.odin-srv-project.com" target="_blank" class="btn btn-active bg-black text-white">WebService Flask</a>
+            <a href="https://webhook.odin-srv-project.com" class="btn btn-active bg-black text-white" target="_blank">WeebHooks</a>
+            <a href="https://api-hd.odin-srv-project.com/docs" target="_blank" class="mt-2 btn btn-active bg-black text-white">FastAPI do Projeto Healthy Developer</a>
+            
         </p>
     </div>
 </div>
 <!-- FIM quem sabe fazeer mostra que sabe! -->
 
+<!-- 
+<h1 class="text-center text-4xl  my-4 font-bold p-8 headline">Tudo isso está online agora, na minha nuvem privada.</h1>
+<div class="p-10">
+    <img class="" src="images/diagrama-nginx.png" alt="diagrama dos meus serviços Nginx">
+</div> -->
 
 <!-- LINHA DO TEMPO -->
 <div class="container mx-auto py-4 md:py-4 headline m-[10mm]">
@@ -474,6 +393,93 @@
 </div>
 <!-- fim principais habilidades -->
 
+<!-- Título dos Desafios Superados -->
+<div class="min-h-screen flex items-center justify-center bg-base-200">
+<div class="py-4 headline">
+    <div class="container mx-auto text-center">
+        <p class="text-lg md:text-xl">Seguindo a ideia de perfil realizador...</p>
+        <h1 class="text-4xl font-bold">Veja alguns dos desafios que enfrentei durante a carreira e que tive de superar.</h1>
+    </div>
+</div>
+</div>
+<!-- fim Título dos Desafios Superados -->
+
+
+<!-- INÍCIO Desafios Superados -->
+        <div class="bg-gradient-to-r from-blue-200 to-blue-500 min-h-screen flex items-center justify-center">
+            <div class="container mx-auto py-12 md:py-24 headline">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <!-- Descrição do projeto -->
+                    <div class="p-4">
+                        <h1 class="text-4xl font-bold mb-4">Fiz manutenção e implementei novas funcionalidades em um aplicativo legado em produção [PHP Runner]</h1>
+                        <p class="text-gray-600">A Harpia Tech tem um projeto Web em produção que é o mantenedor da empresa. Devido a um acidente com um dos sócios, o código do projeto foi perdido
+                            sobrando apenas o build em produção do código. Com uma licitação em andamento que previa novas funcionalidades, eu fui "voluntário" para aplicar essa manutenção e implementar novas funcionalidades. Devido ao risco, ninguém queria fazer. Porém, olhei para o problema, entendi a arquitetura, fiz um espoço e apliquei a implementação. 
+                        </p>
+                    </div>
+                    
+                    <!-- Carrossel de imagens -->
+                    <div class="relative rounded-lg overflow-hidden shadow-md">
+                        <div class="mockup-code">
+                            <pre><code>PHP Runner https://xlinesoft.com/blog/2018/11/06/customizing-project-logo/</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- desafios superados  2 -->
+    <div class="min-h-screen bg-gray-100 flex items-center justify-center">
+        <div class="container mx-auto py-12 md:py-24 headline">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Coluna do Vídeo -->
+                <div class="mockup-phone relative border-black">
+                    <div class="display flex items-center justify-center">
+                    <div class="artboard artboard-demo phone-1">
+                        <iframe
+                        class="artboard-demo phone-1 absolute inset-0 w-full h-full"
+                        src="https://www.youtube.com/embed/zNMpV6UGtVQ?controls=0"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                        </iframe>
+                    </div>
+                    </div>
+                </div>
+                
+
+                <!-- Coluna da Descrição -->
+                <div class="flex flex-col justify-center">
+                    <h1 class="font-bold text-4xl md:text-5xl lg:text-6xl mb-4">Criei e configurei um servidor (nuvem privada) em casa.</h1>
+                    <p class="text-gray-600 text-lg mb-8">Para configurar um servidor em casa com uma internet residencial é preciso solidos conhecimentos de infraestrurada de redes. Configrar firewall, encaminhamento de portas, certificados SSL, containers, servidores web como Apache e Nginx. Para assim preparar aplicações para rodarem em ambientes de produção.</p>
+                    <a href="https://www.linkedin.com/posts/mateus-brandeburski-001ba7202_devops-backend-developer-activity-7142514148243935233-me8U?utm_source=share&utm_medium=member_desktop" class="text-blue-500 hover:underline" target="_blank">Assistir o vídeo completo.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- desafios superados 3 -->
+
+    <div class="min-h-screen flex  bg-blue-200  items-center justify-center">
+        <div class="container mx-auto py-12 md:py-24 headline">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <!-- Carrossel de imagens -->
+                <div class="mockup-browser border bg-base-300">
+                    <div class="mockup-browser-toolbar">
+                    <div class="input">https://github.com/telekom-security/tpotce</div>
+                    </div>
+                    <img src="images/tpotsocial.png" alt="Imagem do navegador" />
+                </div>
+                <!-- Descrição do projeto -->
+                <div class="p-4">
+                    <h1 class="text-4xl font-bold mb-4">Tive de desenvolver conceitos Avançados em Cyber Segurança e Honeypots</h1>
+                    <p class="text-gray-600">Parte do meu trabalho foi configurar os servidores desatualizados (PHP, Apache, Python). Além disso, configurar chaves SSL, Honeypots internos e externos para segurança dos servidores e clientes. Como minha experiência anterior tinha sido como desenvolvedor apenas, tive de estudar e aprender todos esses novos conceitos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIM desafios superados -->
 
 
 
@@ -563,6 +569,40 @@
 
     document.getElementById('current-year').textContent = getCurrentYear();
 </script>
+
+<!-- código do scroll pela seta -->
+<script>
+    const seta = document.getElementById('seta');
+    let ultimoScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    window.addEventListener('scroll', function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        // Verifica a direção do scroll
+        if (scrollTop > ultimoScrollTop) {
+            // Rola para baixo - esconde a seta
+            seta.style.display = 'none';
+        } else {
+            // Rola para cima - mostra a seta
+            seta.style.display = 'block';
+        }
+
+        ultimoScrollTop = scrollTop;
+    });
+
+    seta.addEventListener('click', function() {
+        // Calcula a altura da janela para rolar 10% da página
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+        const scrollAmount = windowHeight * 0.9;
+
+        // Rola a página para baixo
+        window.scrollBy({
+            top: scrollAmount,
+            behavior: 'smooth' // Adiciona um efeito de rolagem suave
+        });
+    });
+</script>
+
 
 </body>
 </html>
