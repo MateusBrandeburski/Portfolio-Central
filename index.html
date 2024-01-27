@@ -40,16 +40,16 @@
             z-index: 9999;
             transition: width 0.2s;
         }
+
+
     </style>
 </head>
 <body>
 
 <div id="scroll-progress"></div>
-<div style="height: 2000px;"> 
+<div> 
     <!-- INÍCIO APRESENTAÇÃO -->
-
-    <!-- min-h-screen -->
-    <div class=" flex bg-base-300 items-center justify-center">
+    <div class="flex bg-base-300 items-center justify-center">
         <div class="container mx-auto py-12 md:py-24 headline">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="flex items-center justify-center">
@@ -69,12 +69,6 @@
                 </div>
             </div>
         </div>
-        <!-- seta para quando usar "min-h-screen" -->
-        <!-- <div class="flex items-center justify-center absolute top-100 bottom-0 left-0 right-0">
-            <svg id="seta" xmlns="http://www.w3.org/2000/svg" class="h-9 w-4 animate-bounce animate-pulse text-primary-500 my-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-            </svg>
-        </div> -->
     </div>
 <!-- FIM APRESENTACAO -->
 
@@ -84,7 +78,8 @@
         <h1 class="text-4xl  my-4 font-bold p-8">Melhor do que falar dos frameworks que eu uso, é provar.</h1>   
     </div>
 </div>
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 mb-8 headline">
+
+<div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8 headline">
     <div class="card w-96 bg-base-100 bg-white p-8 shadow-lg rounded-lg mx-auto text-center">
         <img src="images/java-svgrepo-com.svg" alt="Logo da Empresa 1" class="mx-auto mb-4" width="100">
         <h1 class="text-2xl font-bold mb-2 text-gray-900">JAVA</h1>
@@ -109,7 +104,7 @@
 </div>
     
 <!-- Seção inferior -->
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 mb-8 headline">
+<div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8 headline">
     <div class="card w-96 bg-base-100 bg-white p-8 shadow-lg rounded-lg mx-auto text-center">
         <img src="images/php01-svgrepo-com.svg" alt="Logo da Empresa 1" class="mx-auto mb-4" width="100">
         <h1 class="text-2xl font-bold mb-2 text-gray-900">PHP</h1>
@@ -139,24 +134,22 @@
 <!-- FIM quem sabe fazeer mostra que sabe! -->
 
 
-<!-- Seção Título -->
+<!-- Como é a infra dos meus projetos -->
 <div class="container my-4 mx-auto text-center headline">
-    <h1 class="text-4xl my-4 font-bold p-4">Tudo isso está online agora, na minha nuvem privada.</h1>
+    <h1 class="text-4xl my-4 font-bold p-10">Tudo isso está online agora, na minha nuvem privada.</h1>
     <p class="text-gray-700 mx-auto leading-relaxed max-w-2xl">Cada projeto e os seus respectivos data bases em seu container Docker.
         Toda configuração de subdomínios, rotas no nginx, proxy reverso, ssl feitas por mim.
     </p>
     <a class="text-gray-700 border-b border-black" target="_blank" href="https://www.linkedin.com/feed/update/urn:li:activity:7142514148243935233/">Mais sobre o servidor.</a>
 </div>
 
-<!-- Seção Imagem -->
+
 <div class="container my-4 mx-auto text-center headline">
     <div class="p-10">
-        <img class="mx-auto" src="images/diagrama-nginx-2.png" alt="diagrama dos meus serviços Nginx">
-
-        </p>
+        <img id="imagemDiagramaNginx" class="mx-auto" src="images/diagrama-nginx-2.png" alt="diagrama dos meus serviços Nginx">
     </div>
 </div>
-
+<!-- Fim Como é a infra dos meus projetos -->
 
 <!-- LINHA DO TEMPO -->
 <div class="container mx-auto py-4 md:py-4 headline m-[10mm]">
@@ -422,97 +415,89 @@
 
 <!-- INÍCIO Desafios Superados -->
 
+                <!-- desafios superados -->
+                <div class="min-h-screen bg-gray-100 flex items-center justify-center px-4 md:px-8">
+                    <div class="container mx-auto py-12 md:py-24 headline" style="margin-left: 20px; margin-right: 25px;">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            
+                            <img class="mask mask-squircle" style="width: 70%;" src="images/web-scraping2.png" />
 
-    <!-- desafios superados -->
-    <div class="min-h-screen bg-gray-100 flex items-center justify-center">
-        <div class="container mx-auto py-12 md:py-24 headline">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                
-                <img class="mask mask-squircle" style="width: 70%;" src="images/voadora-no-cloudflare.png" />
-
-                
-                <div class="flex flex-col justify-center">
-                    <h1 class="font-bold text-4xl md:text-5xl lg:text-6xl mb-4">Raspar dados sites protegidos pelo Cloud Flare</h1>
-                    <p class="text-gray-600 text-lg mb-8">Tive que extrair dados em sites protegidos pela Cloud Flare e muitas vezes preciva fazer login para acessar
-                        o conteúdo alvo do scraping. Eles são fortes, mas não existe site que não possa ser extraidos os dados por bots. Todos eles sempre tem uma vulneralbilidade, uma API aberta, um Curl que traz todo conteúdo html da página, um tráfego de rede desprotegido, um ajax que pode ser acessado... 
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- desafios superados -->
-    <div class="bg-base-300 min-h-screen flex items-center justify-center">
-        <div class="container mx-auto py-12 md:py-24 headline">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                <div class="p-4">
-                    <h1 class="text-4xl font-bold mb-4">Fiz manutenção e implementei novas funcionalidades em um aplicativo legado em produção [PHP Runner]</h1>
-                    <p class="text-gray-600">A Harpia Tech tem um projeto Web em produção que é o mantenedor da empresa. Devido a um acidente com um dos sócios, o código do projeto foi perdido
-                        sobrando apenas o build em produção do código. Com uma licitação em andamento que previa novas funcionalidades, eu fui "voluntário" para aplicar essa manutenção e implementar novas funcionalidades. Devido ao risco, ninguém queria fazer. Porém, olhei para o problema, entendi a arquitetura, fiz um espoço e apliquei a implementação. 
-                    </p>
-                </div>
-                
-               
-                <div class="relative rounded-lg overflow-hidden shadow-md">
-                    <div class="mockup-code">
-                        <pre><code>PHP Runner https://xlinesoft.com/blog/2018/11/06/customizing-project-logo/</code></pre>
+                            
+                            <div class="flex flex-col justify-center">
+                                <h1 class="font-bold text-4xl md:text-5xl lg:text-6xl mb-4">Raspar dados de sites protegidos pelo CloudFlare</h1>
+                                <p class="text-gray-600 text-lg mb-8">Tive que extrair dados em sites protegidos pela CloudFlare e muitas vezes preciva fazer login para acessar
+                                    o conteúdo alvo do scraping. Eles são fortes, mas não existe site que não possa ser extraidos os dados por bots. Todos eles sempre tem uma vulneralbilidade, uma API aberta, um Curl que traz todo conteúdo html da página, um tráfego de rede desprotegido, um ajax que pode ser acessado... 
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- desafios superados -->
-    <div class="min-h-screen bg-gray-100 flex items-center justify-center">
-        <div class="container mx-auto py-12 md:py-24 headline">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Coluna do Vídeo -->
-                <div class="mockup-phone relative border-black">
-                    <div class="display flex items-center justify-center">
-                    <div class="artboard artboard-demo phone-1">
-                        <iframe
-                        class="artboard-demo phone-1 absolute inset-0 w-full h-full"
-                        src="https://www.youtube.com/embed/zNMpV6UGtVQ?controls=0"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen>
-                        </iframe>
-                    </div>
-                    </div>
-                </div>
-                
-                <div class="flex flex-col justify-center">
-                    <h1 class="font-bold text-4xl md:text-5xl lg:text-6xl mb-4">Criei e configurei um servidor (nuvem privada) em casa.</h1>
-                    <p class="text-gray-600 text-lg mb-8">Para configurar um servidor em casa com uma internet residencial é preciso solidos conhecimentos de infraestrurada de redes. Configrar firewall, encaminhamento de portas, certificados SSL, containers, servidores web como Apache e Nginx. Para assim preparar aplicações para rodarem em ambientes de produção.</p>
-                    <a href="https://www.linkedin.com/posts/mateus-brandeburski-001ba7202_devops-backend-developer-activity-7142514148243935233-me8U?utm_source=share&utm_medium=member_desktop" class="text-blue-500 hover:underline" target="_blank">Assistir o vídeo completo.</a>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- desafios superados -->
-
-    <div class="min-h-screen flex  bg-base-300  items-center justify-center">
-        <div class="container mx-auto py-12 md:py-24 headline">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                <!-- Carrossel de imagens -->
-                <div class="mockup-browser border bg-base-300">
-                    <div class="mockup-browser-toolbar">
-                    <div class="input">https://github.com/telekom-security/tpotce</div>
+                <!-- desafios superados -->
+                <div class="bg-base-300 min-h-screen flex items-center justify-center">
+                    <div class="container mx-auto py-12 md:py-24 headline"  style="margin-left: 20px; margin-right: 25px;">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                            <div class="p-4">
+                                <h1 class="text-4xl font-bold mb-4">Fiz manutenção e implementei novas funcionalidades em um aplicativo legado em produção [PHP Runner]</h1>
+                                <p class="text-gray-600">A Harpia Tech tem um projeto Web em produção que é o mantenedor da empresa. Devido a um acidente com um dos sócios, o código do projeto foi perdido
+                                    sobrando apenas o build em produção do código. Com uma licitação em andamento que previa novas funcionalidades, eu fui "voluntário" para aplicar essa manutenção e implementar novas funcionalidades. Devido ao risco, ninguém queria fazer. Porém, olhei para o problema, entendi a arquitetura, fiz um espoço e apliquei a implementação. 
+                                </p>
+                            </div>
+                            
+                        
+                            <div class="relative rounded-lg overflow-hidden shadow-md">
+                                <div class="mockup-code">
+                                    <pre><code>PHP Runner https://xlinesoft.com/blog/2018/11/06/customizing-project-logo/</code></pre>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <img src="images/tpotsocial.png" alt="Imagem do navegador" />
                 </div>
-                <!-- Descrição do projeto -->
-                <div class="p-4">
-                    <h1 class="text-4xl font-bold mb-4">Tive de desenvolver conceitos Avançados em Cyber Segurança e Honeypots</h1>
-                    <p class="text-gray-600">Parte do meu trabalho foi configurar os servidores desatualizados (PHP, Apache, Python). Além disso, configurar chaves SSL, Honeypots internos e externos para segurança dos servidores e clientes. Como minha experiência anterior tinha sido como desenvolvedor apenas, tive de estudar e aprender todos esses novos conceitos.
-                    </p>
+
+                <!-- desafios superados -->
+                <div class="min-h-screen bg-gray-100 flex items-center justify-center">
+                    <div class="container mx-auto py-12 md:py-24 headline"  style="margin-left: 20px; margin-right: 25px;">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                            <div class="flex flex-col justify-center">
+                                <h1 class="font-bold text-4xl md:text-5xl lg:text-6xl mb-4">Criei e configurei um servidor em casa</h1>
+                                <p class="text-gray-600 text-lg mb-8">Para configurar um servidor em casa e fazer dele uma nuvem privada com uma internet residencial, é preciso solidos conhecimentos de infraestrurada de redes. Configrar firewall, encaminhamento de portas, certificados SSL, containers, servidores web como Apache e Nginx. Para assim preparar aplicações para rodarem em ambientes de produção.</p>
+                                <a href="https://www.linkedin.com/posts/mateus-brandeburski-001ba7202_devops-backend-developer-activity-7142514148243935233-me8U?utm_source=share&utm_medium=member_desktop" class="text-blue-500 hover:underline" target="_blank">Assistir o vídeo em que falo sobre ele...</a>
+                            </div>
+
+                            <div class="mockup-browser border bg-base-300">
+                                <div class="mockup-browser-toolbar">
+                                <div class="input">https://odin-srv-project.com</div>
+                                </div>
+                                <img src="images/home-serve-2.jpeg" alt="Imagem do navegador" />
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
+
+                <!-- desafios superados -->
+                <div class="min-h-screen flex  bg-base-300  items-center justify-center">
+                    <div class="container mx-auto py-12 md:py-24 headline"  style="margin-left: 20px; margin-right: 25px;">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+
+                            <div class="mockup-browser border bg-base-300">
+                                <div class="mockup-browser-toolbar">
+                                <div class="input">https://github.com/telekom-security/tpotce</div>
+                                </div>
+                                <img src="images/tpotsocial.png" alt="Imagem do navegador" />
+                            </div>
+
+                            <div class="p-4">
+                                <h1 class="text-4xl font-bold mb-4">Tive de desenvolver conceitos Avançados em Cyber Segurança e Honeypots</h1>
+                                <p class="text-gray-600">Parte do meu trabalho foi configurar os servidores desatualizados (PHP, Apache, Python). Além disso, configurar chaves SSL, Honeypots internos e externos para segurança dos servidores e clientes. Como minha experiência anterior tinha sido como desenvolvedor apenas, tive de estudar e aprender todos esses novos conceitos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+   
     <!-- FIM desafios superados -->
 
 
@@ -554,7 +539,7 @@
 <script>
     ScrollReveal().reveal('.headline');
      
-    // Configuração para telas maiores (não celulares)
+    // desktop
     ScrollReveal().reveal('.headline', {
         reset: true,
         duration: 1000,
@@ -562,7 +547,7 @@
         origin: 'right'
     });
 
-    // Configuração para telas menores (modo celular)
+    // celular
     if (window.innerWidth < 768) { 
         ScrollReveal().reveal('.headline', {
             reset: true,
@@ -596,37 +581,22 @@
     document.getElementById('current-year').textContent = getCurrentYear();
 </script>
 
-<!-- código do scroll pela seta -->
+<!-- código muda img -->
 <script>
-    const seta = document.getElementById('seta');
-    let ultimoScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    function ajustarImagem() {
+        var largura = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        var imagem = document.getElementById('imagemDiagramaNginx');
 
-    window.addEventListener('scroll', function() {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-        // Verifica a direção do scroll
-        if (scrollTop > ultimoScrollTop) {
-            // Rola para baixo - esconde a seta
-            seta.style.display = 'none';
+        if (largura < 768) { 
+            imagem.src = 'images/diagramaNginxCelular.png'; // Caminho para a imagem para celulares
         } else {
-            // Rola para cima - mostra a seta
-            seta.style.display = 'block';
+            imagem.src = 'images/diagrama-nginx-2.png'; // Caminho para a imagem padrão (desktop)
         }
+    }
 
-        ultimoScrollTop = scrollTop;
-    });
-
-    seta.addEventListener('click', function() {
-        // Calcula a altura da janela para rolar 10% da página
-        const windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-        const scrollAmount = windowHeight * 0.9;
-
-        // Rola a página para baixo
-        window.scrollBy({
-            top: scrollAmount,
-            behavior: 'smooth' // Adiciona um efeito de rolagem suave
-        });
-    });
+    // Executa a função ao carregar e ao redimensionar a janela
+    window.onload = ajustarImagem;
+    window.onresize = ajustarImagem;
 </script>
 
 
