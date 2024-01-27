@@ -7,6 +7,7 @@
     <link href="/images/mateus_chat_gpt2.png" rel="icon" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+
     <title>Mateus Brandeburski</title>
     <style>
         .connector {
@@ -168,7 +169,7 @@
             <time class="font-mono italic">2023/04 - ∞ </time>
             <div class="text-lg font-black">Desenvolvedor Backend e Devops Pleno - Harpia Tech</div>
             <p class="max-w-xl mx-auto">
-            Fui colocado direto com acesso aos servidores em ambiente de produção. Parte em um Datacenter aqui em Brasília, parte na nuvem.</p>
+            Manutenção em aplicações PHP, contrução de robôs de scraping em Python e GO, Deploy das aplicações na nuvem pública e privada, versionamento de código, Integração e Criação de micro serviços REST, Docker, Kubernetes, Elastic Search, Kibana...</p>
         </div>
         <hr/>
         </li>
@@ -208,7 +209,7 @@
             <time class="font-mono italic">2021</time>
             <div class="text-lg font-black">Estágio de Desenvolvedor Backend - Trovale Tecnologia</div>
             <p class="max-w-xl mx-auto">
-                    Eu já tinha experiência, mas não no mercado. Por isso, comecei como estagiário desenvolvendo bots de scraping em fontes abertas e persistindo esses dados em um bando PostgreSQL.
+                    Comecei como estagiário desenvolvendo bots de scraping em fontes abertas, persistindo esses dados em um bando PostgreSQL, Linux, ETL...
             </p>
         </div>
         <hr />
@@ -582,23 +583,6 @@
     document.getElementById('current-year').textContent = getCurrentYear();
 </script>
 
-<!-- código muda img -->
-<script>
-    function ajustarImagem() {
-        var largura = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-        var imagem = document.getElementById('imagemDiagramaNginx');
-
-        if (largura < 768) { 
-            imagem.src = 'images/diagramaNginxCelular.png'; // Caminho para a imagem para celulares
-        } else {
-            imagem.src = 'images/diagrama-nginx-2.png'; // Caminho para a imagem padrão (desktop)
-        }
-    }
-
-    // Executa a função ao carregar e ao redimensionar a janela
-    window.onload = ajustarImagem;
-    window.onresize = ajustarImagem;
-</script>
 
 
 </body>
