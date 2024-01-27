@@ -35,7 +35,7 @@
             top: 0;
             left: 0;
             height: 5px;
-            background-color: rgb(162, 123, 255);
+            background-color: rgb(58, 133, 64);
             width: 0;
             z-index: 9999;
             transition: width 0.2s;
@@ -49,13 +49,13 @@
     <!-- INÍCIO APRESENTAÇÃO -->
 
     <!-- min-h-screen -->
-    <div class=" flex bg-blue-200 items-center justify-center">
+    <div class=" flex bg-base-300 items-center justify-center">
         <div class="container mx-auto py-12 md:py-24 headline">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="flex items-center justify-center">
                     <div class="avatar">
                         <div class="w-80 h-80 md:w-96 md:h-96 rounded-full">
-                            <img src="images/minha-foto1.jpeg" alt="minha_foto">
+                            <img src="images/mateus_chat_gpt2.png" alt="minha_foto">
                         </div>
                     </div>
                 </div>
@@ -421,28 +421,49 @@
 
 
 <!-- INÍCIO Desafios Superados -->
-        <div class="bg-gradient-to-r from-blue-200 to-blue-500 min-h-screen flex items-center justify-center">
-            <div class="container mx-auto py-12 md:py-24 headline">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                    <!-- Descrição do projeto -->
-                    <div class="p-4">
-                        <h1 class="text-4xl font-bold mb-4">Fiz manutenção e implementei novas funcionalidades em um aplicativo legado em produção [PHP Runner]</h1>
-                        <p class="text-gray-600">A Harpia Tech tem um projeto Web em produção que é o mantenedor da empresa. Devido a um acidente com um dos sócios, o código do projeto foi perdido
-                            sobrando apenas o build em produção do código. Com uma licitação em andamento que previa novas funcionalidades, eu fui "voluntário" para aplicar essa manutenção e implementar novas funcionalidades. Devido ao risco, ninguém queria fazer. Porém, olhei para o problema, entendi a arquitetura, fiz um espoço e apliquei a implementação. 
-                        </p>
-                    </div>
-                    
-                    <!-- Carrossel de imagens -->
-                    <div class="relative rounded-lg overflow-hidden shadow-md">
-                        <div class="mockup-code">
-                            <pre><code>PHP Runner https://xlinesoft.com/blog/2018/11/06/customizing-project-logo/</code></pre>
-                        </div>
+
+
+    <!-- desafios superados -->
+    <div class="min-h-screen bg-gray-100 flex items-center justify-center">
+        <div class="container mx-auto py-12 md:py-24 headline">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <img class="mask mask-squircle" style="width: 70%;" src="images/voadora-no-cloudflare.png" />
+
+                
+                <div class="flex flex-col justify-center">
+                    <h1 class="font-bold text-4xl md:text-5xl lg:text-6xl mb-4">Raspar dados sites protegidos pelo Cloud Flare</h1>
+                    <p class="text-gray-600 text-lg mb-8">Tive que extrair dados em sites protegidos pela Cloud Flare e muitas vezes preciva fazer login para acessar
+                        o conteúdo alvo do scraping. Eles são fortes, mas não existe site que não possa ser extraidos os dados por bots. Todos eles sempre tem uma vulneralbilidade, uma API aberta, um Curl que traz todo conteúdo html da página, um tráfego de rede desprotegido, um ajax que pode ser acessado... 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- desafios superados -->
+    <div class="bg-base-300 min-h-screen flex items-center justify-center">
+        <div class="container mx-auto py-12 md:py-24 headline">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="p-4">
+                    <h1 class="text-4xl font-bold mb-4">Fiz manutenção e implementei novas funcionalidades em um aplicativo legado em produção [PHP Runner]</h1>
+                    <p class="text-gray-600">A Harpia Tech tem um projeto Web em produção que é o mantenedor da empresa. Devido a um acidente com um dos sócios, o código do projeto foi perdido
+                        sobrando apenas o build em produção do código. Com uma licitação em andamento que previa novas funcionalidades, eu fui "voluntário" para aplicar essa manutenção e implementar novas funcionalidades. Devido ao risco, ninguém queria fazer. Porém, olhei para o problema, entendi a arquitetura, fiz um espoço e apliquei a implementação. 
+                    </p>
+                </div>
+                
+               
+                <div class="relative rounded-lg overflow-hidden shadow-md">
+                    <div class="mockup-code">
+                        <pre><code>PHP Runner https://xlinesoft.com/blog/2018/11/06/customizing-project-logo/</code></pre>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-    <!-- desafios superados  2 -->
+    <!-- desafios superados -->
     <div class="min-h-screen bg-gray-100 flex items-center justify-center">
         <div class="container mx-auto py-12 md:py-24 headline">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -462,8 +483,6 @@
                     </div>
                 </div>
                 
-
-                <!-- Coluna da Descrição -->
                 <div class="flex flex-col justify-center">
                     <h1 class="font-bold text-4xl md:text-5xl lg:text-6xl mb-4">Criei e configurei um servidor (nuvem privada) em casa.</h1>
                     <p class="text-gray-600 text-lg mb-8">Para configurar um servidor em casa com uma internet residencial é preciso solidos conhecimentos de infraestrurada de redes. Configrar firewall, encaminhamento de portas, certificados SSL, containers, servidores web como Apache e Nginx. Para assim preparar aplicações para rodarem em ambientes de produção.</p>
@@ -473,9 +492,9 @@
         </div>
     </div>
 
-    <!-- desafios superados 3 -->
+    <!-- desafios superados -->
 
-    <div class="min-h-screen flex  bg-blue-200  items-center justify-center">
+    <div class="min-h-screen flex  bg-base-300  items-center justify-center">
         <div class="container mx-auto py-12 md:py-24 headline">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 <!-- Carrossel de imagens -->
@@ -495,12 +514,6 @@
         </div>
     </div>
     <!-- FIM desafios superados -->
-
-
-
-<!-- Carta de apresentacao? -->
-<!--  -->
- 
 
 
 <!-- FOOTER -->
