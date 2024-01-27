@@ -1,5 +1,5 @@
 # Use a imagem oficial do Nginx como base
-FROM nginx:latest
+FROM nginx:stable-alpine3.17-slim
 
 WORKDIR /Meu-Portf-lio
 
