@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scaDole=1.0">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.17/dist/full.min.css" rel="stylesheet" type="text/css" />
     <link href="/images/mateus_chat_gpt2.png" rel="icon" type="image/x-icon">
+    <script src="js/meuScrollReveal.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/imagemDiagramaNginx.js"></script>
+    <script src="js/anoDinamico.js"></script>
+    <script src="js/indicadoProgressoPagina.js"></script>
+
 
     <title>Mateus Brandeburski</title>
     <style>
@@ -48,7 +53,6 @@
 <body>
 
 <div id="scroll-progress"></div>
-<div> 
     <!-- INÍCIO APRESENTAÇÃO -->
     <div class="flex bg-base-300 items-center justify-center">
         <div class="container mx-auto py-12 md:py-24 headline">
@@ -499,7 +503,7 @@
                         </div>
                     </div>
                 </div>
-   
+
     <!-- FIM desafios superados -->
 
 
@@ -523,7 +527,7 @@
                 <a target="_blank" rel="noreferrer" href="mailto:mateus.brandeburski92@gmail.com">
                     <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
                         <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
-                      </svg>
+                    </svg>
                 </a>
             </div>
         </div>
@@ -531,59 +535,11 @@
                 <p class="text-sm">Brasília - DF</p>
                 <p>Alguns componentes tirados de <a href="https://daisyui.com/" class="link">daisyUI</a>, <a href="https://tailwindui.com/components?ref=sidebar" class="link">Tailwind</a> e <a href="https://scrollrevealjs.org/" class="link">ScrollReveal</a>.</p>
                 <p>Copyright ©  <span id="current-year"></span> - Todos os direitos reservados por <b>Mateus DEV - CNPJ 50.912.826/0001-03</b></p>
-               
+            
             </div>
     </footer>
     <!-- fim FOOTER -->
-</div>
-
-
-<script>
-    ScrollReveal().reveal('.headline');
-     
-    // desktop
-    ScrollReveal().reveal('.headline', {
-        reset: true,
-        duration: 1000,
-       // distance: '30px', //gera bug da lateral vazia
-        origin: 'right'
-    });
-
-    // celular
-    if (window.innerWidth < 768) { 
-        ScrollReveal().reveal('.headline', {
-            reset: true,
-            duration: 1000,
-            distance: '0', 
-            origin: 'bottom' 
-        });
-    }
-
-    ScrollReveal().reveal('.rolagem1');
-</script>
-
-<!-- Função para atualizar a barra de progresso com base na posição de rolagem -->
-<script>
-    function updateProgressBar() {
-        const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
-        const scrollTop = window.scrollY;
-        const progress = (scrollTop / scrollableHeight) * 100;
-        const progressBar = document.getElementById('scroll-progress');
-        progressBar.style.width = progress + '%';
-    }
-    window.addEventListener('scroll', updateProgressBar);
-</script>
-
-<!-- Atualização do ano em Copyright © no Footer -->
-<script>
-    function getCurrentYear() {
-        return new Date().getFullYear();
-    }
-
-    document.getElementById('current-year').textContent = getCurrentYear();
-</script>
-
-
+    
 
 </body>
 </html>
