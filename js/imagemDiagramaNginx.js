@@ -1,3 +1,4 @@
+// Muda a imagem Nginx para Mobile
 function ajustarImagem() {
     var largura = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     var imagem = document.getElementById('imagemDiagramaNginx');
@@ -11,4 +12,3 @@ function ajustarImagem() {
 
 window.onload = ajustarImagem;
 window.onresize = ajustarImagem;
-
