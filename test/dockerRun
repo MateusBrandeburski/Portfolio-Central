@@ -1,0 +1,6 @@
+docker stop portifolio-central && docker rm portifolio-central && docker build -t portfolio-central . && docker run -d -p 8080:80 --restart=always --name portifolio-central portfolio-central:latest
+
+
+docker rmi $(docker images -f "dangling=true" -q)
+
+docker rm $(docker ps -aq --filter "status=exited")
