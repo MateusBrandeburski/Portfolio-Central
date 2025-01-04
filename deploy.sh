@@ -28,10 +28,10 @@ if [[ "$CONFIRMATION" =~ ^[Ss]$ ]]; then
     sleep 2
 
     echo \"Salvando backup...\"
-    if [ -d \"$REMOTE_DIR\" ]; then
-        mkdir -p \"$REMOTE_DIR_BACKUP\"
-        mv \"$REMOTE_DIR\" \"$REMOTE_DIR_BACKUP/$(date +%Y%m%d_%H%M%S)\"
-    fi
+ 
+    mkdir -p \"$REMOTE_DIR_BACKUP\"
+    mv \"$REMOTE_DIR\" \"$REMOTE_DIR_BACKUP"\
+
     sleep 2
 
     echo \"Apagando arquivos do servidor...\"
