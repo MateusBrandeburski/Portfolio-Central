@@ -9,5 +9,3 @@ REMOTE_DIR=""
 rsync -avz -e "ssh -p $REMOTE_PORT" --exclude ".git" ./ "$REMOTE_USER@$REMOTE_HOST:$REMOTE_DIR"
 
 echo "Arquivos enviados para o servidor com sucesso!"
-
-
