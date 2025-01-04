@@ -24,7 +24,7 @@ if [[ "$CONFIRMATION" =~ ^[Ss]$ ]]; then
   REMOTE_COMMANDS="
 
     echo 'Salvando backup';
-    rm -rf $REMOTE_DIR_BACKUP && mkdir -p $REMOTE_DIR_BACKUP && cp -r $REMOTE_DIR $REMOTE_DIR_BACKUP
+    rm -rf $REMOTE_DIR_BACKUP && mkdir -p $REMOTE_DIR_BACKUP && cp -r $REMOTE_DIR $REMOTE_DIR_BACKUP/*;
     sleep 2
     echo 'Apagando arquios do servidor'
     rm -rf $REMOTE_DIR/*;
@@ -41,7 +41,8 @@ if [[ "$CONFIRMATION" =~ ^[Ss]$ ]]; then
     cd $REMOTE_DIR && docker build -t portfolio-central:latest .;
 
     sleep 3
-    
+
+
 
     echo 'Executando novo container...';
     docker run -d -p 8080:80 --restart=always --name portfolio-central portfolio-central:latest;
