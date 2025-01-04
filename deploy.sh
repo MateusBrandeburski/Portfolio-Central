@@ -41,6 +41,7 @@ if [[ "$CONFIRMATION" =~ ^[Ss]$ ]]; then
     cd $REMOTE_DIR && docker build -t portfolio-central:latest .;
 
     sleep 3
+    
 
     echo 'Executando novo container...';
     docker run -d -p 8080:80 --restart=always --name portfolio-central portfolio-central:latest;
