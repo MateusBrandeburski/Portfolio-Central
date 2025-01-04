@@ -24,7 +24,7 @@ if [[ "$CONFIRMATION" =~ ^[Ss]$ ]]; then
   REMOTE_COMMANDS="
 
     echo 'Salvando backup';
-    cp $REMOTE_DIR $REMOTE_DIR_BACKUP
+    rm -rf $REMOTE_DIR_BACKUP && mkdir -p $REMOTE_DIR_BACKUP && cp -r $REMOTE_DIR $REMOTE_DIR_BACKUP
     sleep 2
     echo 'Apagando arquios do servidor'
     rm -rf $REMOTE_DIR/*;
